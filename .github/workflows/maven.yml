@@ -3,7 +3,9 @@
 
 name: Java CI with Maven
 
-on:
+on: |
+  schedule: 
+    -cron: 0 0 12 ? * MON,TUE,WED,THU,FRI *
   push:
     branches: [ main ]
   pull_request:
